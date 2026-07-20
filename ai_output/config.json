@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "update_time": "2026-07-20 03:11:53",
+  "description": "PG 影视配置源 - AI自动更新",
+  "sources": {
+    "jsm": {
+      "name": "点播源配置",
+      "description": "jsm.json 包含所有影视点播源",
+      "urls": {
+        "github": "https://raw.githubusercontent.com/ssmhdssmhd/pg/main/jsm.json",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/jsm.json",
+        "ghpci": "https://ghp.ci/https://raw.githubusercontent.com/ssmhdssmhd/pg/main/jsm.json"
+      }
+    },
+    "live_cn": {
+      "name": "国内直播",
+      "description": "国内直播源（央视、卫视、地方台等）",
+      "urls": {
+        "github": "https://raw.githubusercontent.com/ssmhdssmhd/pg/main/ai_output/国内直播.txt",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/ai_output/国内直播.txt",
+        "ghpci": "https://ghp.ci/https://raw.githubusercontent.com/ssmhdssmhd/pg/main/ai_output/国内直播.txt"
+      }
+    },
+    "live_world": {
+      "name": "国外直播",
+      "description": "国外直播源（全球各国电视台）",
+      "urls": {
+        "github": "https://raw.githubusercontent.com/ssmhdssmhd/pg/main/ai_output/国外直播.txt",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/ai_output/国外直播.txt",
+        "ghpci": "https://ghp.ci/https://raw.githubusercontent.com/ssmhdssmhd/pg/main/ai_output/国外直播.txt"
+      }
+    },
+    "live_m3u": {
+      "name": "直播源 M3U",
+      "description": "标准 M3U 格式直播源",
+      "urls": {
+        "github": "https://raw.githubusercontent.com/ssmhdssmhd/pg/main/live.m3u",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/live.m3u",
+        "ghpci": "https://ghp.ci/https://raw.githubusercontent.com/ssmhdssmhd/pg/main/live.m3u"
+      }
+    },
+    "live_lite_m3u": {
+      "name": "精简直播源 M3U",
+      "description": "精简版 M3U 格式直播源",
+      "urls": {
+        "github": "https://raw.githubusercontent.com/ssmhdssmhd/pg/main/live_lite.m3u",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/live_lite.m3u",
+        "ghpci": "https://ghp.ci/https://raw.githubusercontent.com/ssmhdssmhd/pg/main/live_lite.m3u"
+      }
+    },
+    "live_txt": {
+      "name": "直播源 TXT",
+      "description": "标准 TXT 格式直播源",
+      "urls": {
+        "github": "https://raw.githubusercontent.com/ssmhdssmhd/pg/main/live.txt",
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/live.txt",
+        "ghpci": "https://ghp.ci/https://raw.githubusercontent.com/ssmhdssmhd/pg/main/live.txt"
+      }
+    }
+  },
+  "guide": {
+    "ok_ys": {
+      "name": "OK影视 / 影视仓",
+      "description": "在配置中添加以下链接",
+      "steps": [
+        "打开 OK影视 / 影视仓 APP",
+        "进入设置 -> 配置管理",
+        "点击添加配置",
+        "输入名称: PG影视配置",
+        "输入地址: https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/jsm.json",
+        "保存并使用"
+      ]
+    },
+    "tvbox": {
+      "name": "TVBox",
+      "description": "在设置中添加以下配置链接",
+      "steps": [
+        "打开 TVBox APP",
+        "点击菜单 -> 设置 -> 配置地址",
+        "输入: https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/jsm.json",
+        "确定并重启 APP"
+      ]
+    },
+    "iptv": {
+      "name": "IPTV 播放器",
+      "description": "添加直播源链接",
+      "steps": [
+        "打开 IPTV 播放器",
+        "添加直播源",
+        "输入: https://cdn.jsdelivr.net/gh/ssmhdssmhd/pg/ai_output/国内直播.txt",
+        "保存并刷新列表"
+      ]
+    }
+  },
+  "tips": {
+    "国内用户推荐": "优先使用 jsdelivr 或 ghp.ci 加速链接",
+    "更新频率": "每周一、周四自动更新",
+    "AI资源站": "jsm.json 中以 AI_ 开头的资源站是 AI 自动探测的"
+  }
+}
