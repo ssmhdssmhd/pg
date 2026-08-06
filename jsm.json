@@ -919,6 +919,11 @@
 			}
 		],
 		"parses": [
+			{
+				"name": "聚会解析",
+				"type": 0,
+				"url": "http://114.134.184.91:9002/player/?url="
+			}
 		],
 		"flags":["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu"],
 		"wallpaper": "http://饭太硬.top/深色壁纸/api.php",
